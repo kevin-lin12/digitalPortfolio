@@ -3,30 +3,46 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f9f9f9;
+  background-color: #f0f0f4;
   color: #333;
 }
 
 header {
-  background-color: #F0F0F4;
+  background-color: #f0f0f4;
   color: #fff;
-  padding: 20px;
+  padding: 80px;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .logo {
   color: #000;
-  font-family: 'Cursive', cursive;
+  font-family: "Inspiration";
   font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+}
+
+.header-button {
+  color: #26313f;
+  font-family: "Alata";
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid #26313f;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  background-color: #f0f0f4;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-button:hover {
+  color: white;
+  background: #26313f;
 }
 
 nav ul {
@@ -46,101 +62,99 @@ nav ul li a {
   transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #00bcd4;
-}
-
 .bio {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  background-color: #e8f4f8;
+  padding: 150px;
+  padding-left: 200px;
+  background-color: #f0f0f4;
 }
 
-.bio-content {
-  max-width: 600px;
+.bio-name {
+  color: #26313f;
+  font-family: Alata;
+  font-size: 22px;
 }
 
-.bio h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #333;
+h1 {
+  color: #26313f;
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 48px;
 }
 
-.bio h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #555;
-}
-
-.bio p {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.contact-button {
-  background-color: #00bcd4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-  background-color: #008ba3;
+h2 {
+  color: #686565;
+  font-family: Alata;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .status {
-  display: block;
-  margin-top: 10px;
-  color: #00bcd4;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #26313f;
+  font-family: "Alata";
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.status::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #00c853;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .hero-image img {
-  width: 300px;
+  width: 400px;
   border-radius: 15px;
 }
 
 .about {
   padding: 50px;
-  background-color: #fff;
+  background-color: #f0f0f4;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about-content {
+  padding: 100px;
   display: flex;
   align-items: center;
 }
 
 .about-image img {
-  width: 200px;
+  width: 400px;
   border-radius: 15px;
   margin-right: 30px;
 }
 
 .about-text {
-  max-width: 600px;
-}
-
-.about-text h3 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  max-width: 700px;
+  height: 500px;
+  padding-bottom: 50px;
 }
 
 .skills {
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 33px;
+  padding: 20px;
 }
 
 .skills img {
-  width: 40px;
+  width: 50px;
   transition: transform 0.3s;
 }
 
@@ -148,24 +162,10 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-.download-resume {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-.download-resume:hover {
-  background-color: #555;
-}
-
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
-  margin-top: 
+  margin-top: 50px;
+}

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,9 +15,9 @@
             <div class="logo">KL</div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="header-button">About</a></li>
+                    <li><a href="#projects" class="header-button">Projects</a></li>
+                    <li><a href="#contact" class="header-button">Contact</a></li>
                 </ul>
             </nav>
             <button id="theme-toggle" class="theme-toggle">Night Mode</button>
@@ -22,36 +25,43 @@
     </header>
 
     <section class="bio">
-        <div class="bio-content">
-            <h1>Kevin Lin</h1>
-            <h2>Software Developer @ Cornell</h2>
-            <p>Welcome to my website! I specialize in full stack development with an interest in AI, Cybersecurity, and Blockchain development. Come learn more about me below!</p>
-            <button class="contact-button">Contact</button>
-            <span class="status">Available now</span>
+        <div>
+            <p class="bio-name">Kevin Lin</p>
+            <h1>Software Developer @ Cornell</h1>
+            <h2>Welcome to my website! I specialize in full stack development with an interest in AI, Cybersecurity, and Blockchain development. Come learn more about me below!</h2>
+            <div>
+                <button class="header-button">Contact</button>
+                <span class="status">Available now</span>
+            </div>
         </div>
         <div class="hero-image">
             <img src="images/kevintop.png" alt="Kevin Lin">
         </div>
     </section>
+    <hr class="about-divider">
 
     <section id="about" class="about">
         <div class="about-content">
-            <div class="about-image">
-                <img src="images/kevinbio.png" alt="Kevin Lin">
+            <div class="about-image-container">
+                <div class="about-image-frame"></div>
+                <div class="about-image">
+                    <img src="images/kevinbio.png" alt="Kevin Lin">
+                </div>
             </div>
             <div class="about-text">
-                <h3>About Me</h3>
-                <p>I'm Kevin - a Senior studying Computer Science with a minor in business at Cornell University. I previously interned @ BNY as a software engineer focusing on the middle-ware sector of the business. In school, I was the president of Cornell Computer Reuse Association (CCRA) and the Business lead of Cornell Digital Tech & Innovation. Here are some languages and libraries I frequently use.</p>
+                <h1>About Me</h1>
+                <hr class="about-divider">
+                <h2>I'm Kevin - a Senior studying Computer Science with a minor in business at Cornell University. I previously interned @ BNY as a software engineer focusing on the middle-ware sector of the business. In school, I was the president of Cornell Computer Reuse Association (CCRA) and the Business lead of Cornell Digital Tech & Innovation. Here are some languages and libraries I frequently use.</h2>
                 <div class="skills">
-                    <img src="icons/python.png" alt="Python">
-                    <img src="icons/javascript.png" alt="JavaScript">
-                    <img src="icons/typescript.png" alt="TypeScript">
-                    <img src="icons/html.png" alt="HTML">
-                    <img src="icons/css.png" alt="CSS">
-                    <img src="icons/angular.png" alt="Angular">
-                    <img src="icons/java.png" alt="Java">
+                    <img src="images/python.png" alt="Python">
+                    <img src="images/javascript.png" alt="JavaScript">
+                    <img src="images/typescript.png" alt="TypeScript">
+                    <img src="images/html.png" alt="HTML">
+                    <img src="images/css.png" alt="CSS">
+                    <img src="images/angular.png" alt="Angular">
+                    <img src="images/java.png" alt="Java">
                 </div>
-                <button class="download-resume">Download Resume</button>
+                <button class="header-button">Download Resume</button>
             </div>
         </div>
     </section>
@@ -59,5 +69,13 @@
     <footer>
         <p>&copy; 2024 Kevin Lin. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode');
+            themeToggle.textContent = document.body.classList.contains('night-mode') ? 'Day Mode' : 'Night Mode';
+        });
+    </script>
 </body>
 </html>
