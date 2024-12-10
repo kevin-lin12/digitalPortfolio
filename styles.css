@@ -74,7 +74,7 @@ nav ul li a {
 .bio-name {
   color: #26313f;
   font-family: Alata;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h1 {
@@ -162,9 +162,96 @@ h2 {
   transform: scale(1.1);
 }
 
+.skills-text {
+  display: flex;
+  gap: 33px;
+  font-family: Alata;
+}
+
+.projects {
+  padding: 50px;
+  background-color: #f0f0f4;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Alata";
+  font-size: 36px;
+  color: #26313f;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-card h2 {
+  font-size: 18px;
+  color: #26313f;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #686565;
+  margin-bottom: 10px;
+}
+
+.tech-used {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tech-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.visit-site-button,
+.view-all-button {
+  background-color: #26313f;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Alata";
+  margin-top: 30px;
+}
+
+.visit-site-button:hover,
+.view-all-button:hover {
+  background-color: #1d2a33;
+}
+
 footer {
-  background-color: #333;
-  color: #fff;
+  color: #686565;
+  font-family: Alata;
   text-align: center;
   padding: 20px;
   margin-top: 50px;

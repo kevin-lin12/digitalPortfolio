@@ -38,8 +38,9 @@
             <img src="images/kevintop.png" alt="Kevin Lin">
         </div>
     </section>
-    <hr class="about-divider">
 
+    <hr class="about-divider">
+    
     <section id="about" class="about">
         <div class="about-content">
             <div class="about-image-container">
@@ -50,7 +51,6 @@
             </div>
             <div class="about-text">
                 <h1>About Me</h1>
-                <hr class="about-divider">
                 <h2>I'm Kevin - a Senior studying Computer Science with a minor in business at Cornell University. I previously interned @ BNY as a software engineer focusing on the middle-ware sector of the business. In school, I was the president of Cornell Computer Reuse Association (CCRA) and the Business lead of Cornell Digital Tech & Innovation. Here are some languages and libraries I frequently use.</h2>
                 <div class="skills">
                     <img src="images/python.png" alt="Python">
@@ -61,21 +61,26 @@
                     <img src="images/angular.png" alt="Angular">
                     <img src="images/java.png" alt="Java">
                 </div>
+                <div class="skills-text">
+                    <p1 style="padding-bottom:20px;">Python</p1>
+                    <p1>JavaScript</p1>
+                    <p1>TypeScript</p1>
+                    <p1>HTML</p1>
+                    <p1>CSS</p1>
+                    <p1>Angular</p1>
+                    <p1>Java</p1>
+                </div>
                 <button class="header-button">Download Resume</button>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Kevin Lin. All Rights Reserved.</p>
-    </footer>
+    <hr class="about-divider">
 
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('night-mode');
-            themeToggle.textContent = document.body.classList.contains('night-mode') ? 'Day Mode' : 'Night Mode';
-        });
-    </script>
-</body>
-</html>
+    <section id="projects" class="projects">
+        <h1 class="section-title">Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/bny.png" alt="BNY Mellon Logo" class="project-logo">
+                <h2>BNY Mellon Internship</h2>
+                <p>Developed a real-time notification tray system for b
